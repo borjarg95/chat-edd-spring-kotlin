@@ -15,6 +15,7 @@ import java.time.LocalDateTime
 @EqualsAndHashCode
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 data class Message(
+
     @Id
     val id: ObjectId = ObjectId.get(),
     val from: String,
